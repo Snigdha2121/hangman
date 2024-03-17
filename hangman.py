@@ -1,7 +1,7 @@
 import random
 
 def choose_word(choice):
-    with open("python/hangman/my_dict.txt", "r") as file:
+    with open("my_dict.txt", "r") as file:
         word_list = file.readlines()
         if choice == 1:
             easy_words = [word.strip() for word in word_list if len(word.strip()) <= 3]
